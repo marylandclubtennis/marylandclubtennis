@@ -1,12 +1,4 @@
 /* -----------------------------------------------------------------------------
- * Navbar
- * -----------------------------------------------------------------------------
- */
-
-
-
-
-/* -----------------------------------------------------------------------------
  * Accordian
  * -----------------------------------------------------------------------------
  */
@@ -130,16 +122,26 @@ section:last-child {
 
 img {
   padding: 30px 50px;
-  .resize {
-    max-width:20%;
-    max-height:20%;
-  }
+  display: block;
 
-  .column {
-      float: left;
-      width: 33.33%;
-      padding: 5px;
-  }
+  &:hover {
+		opacity: 0.5;
+	}
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 33.33%;
+    padding: 5px;
 }
 
 .hero {
