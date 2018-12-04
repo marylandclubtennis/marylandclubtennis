@@ -1,0 +1,169 @@
+/* -----------------------------------------------------------------------------
+ * Navbar
+ * -----------------------------------------------------------------------------
+ */
+
+
+
+
+/* -----------------------------------------------------------------------------
+ * Accordian
+ * -----------------------------------------------------------------------------
+ */
+
+ .question {
+   background-color: #eee;
+   color: #444;
+   cursor: pointer;
+   padding: 2rem;
+   width: 100%;
+   transition: ease all .3s;
+ }
+
+ /*
+  * Adds a bg color to the question if clicked on (if it has .active class) and
+  * if you hover over it
+  */
+ .question.active, .question:hover {
+   background-color: #ccc;
+ }
+
+ .answer {
+   padding: 2rem;
+   background-color: white;
+   display: none;
+   overflow: hidden;
+ }
+
+/* -----------------------------------------------------------------------------
+* Tabs
+* -----------------------------------------------------------------------------
+*/
+
+.tab {
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.4rem 1.6rem;
+  transition: ease all 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  border-top: none;
+}
+
+
+/* -----------------------------------------------------------------------------
+ * Things that matter but are less cool
+ * -----------------------------------------------------------------------------
+ */
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+	color:  #628ed6;
+
+	&.link {
+		color: grey;
+	}
+
+	&:hover {
+		opacity: 0.5;
+	}
+
+	&:active {
+		color: #5994f7;
+	}
+}
+
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-family: 'Karla', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  margin-bottom: 2rem;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+section {
+  padding: 4rem 0rem 0rem;
+}
+
+section:last-child {
+  padding-bottom: 4rem;
+}
+
+img {
+  padding: 30px 50px;
+  .resize {
+    max-width:20%;
+    max-height:20%;
+  }
+
+  .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+  }
+}
+
+.hero {
+  padding: 20rem 1.5rem;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a6a6a6;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 5.5rem;
+}
+.hero h2 {
+  font-size: 2.6rem;
+  margin: 0;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
